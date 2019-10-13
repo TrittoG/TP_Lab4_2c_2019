@@ -1,0 +1,27 @@
+<p>home works!</p>
+
+
+<h3>Bienvenido {{nombreingresado}}</h3>
+<h4>Bienvenido a esta gran app</h4>
+
+
+<h4>Mesas</h4>
+<button type="button" class="btn btn-primary" (click)="agregarMesa()">Agregar Mesa</button>
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Codigo</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mesa of mesas">
+          <td>{{mesa.id}}</td>
+          <td>{{mesa.estado}}</td>
+          <td>{{mesa.codigo}}</td>
+        </tr>
+       
+    </tbody>
+  </table>

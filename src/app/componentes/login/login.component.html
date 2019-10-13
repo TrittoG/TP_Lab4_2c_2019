@@ -1,0 +1,23 @@
+<div id="titulito">
+    <h2>Inicia Sesion para Poder disfrutar de este magnifico sitio</h2>
+</div>
+
+<div id="formulario">
+    <label>Usuario: <br>
+        <input type="text" name="input" [(ngModel)]="nombreUsuario">
+    </label>
+    <br>
+    <label>Contraseña: <br>
+        <input type="password" name="input" [(ngModel)]="passUsuario">
+    </label>
+    <br>
+    
+    <re-captcha (resolved)="resolved($event)" siteKey="6LcdUL0UAAAAAOsGwZ2fum-wfTdtCBJfnxR93D3f"></re-captcha>
+
+    <button (click)="entrar()" id="boton" >Login In</button>
+
+    <p>{{nombreUsuario}}</p>
+
+    <p>No tienes cuenta? <span (click)="registro()" id="spanRegistro">Registrate!</span></p>
+
+</div>
