@@ -1,36 +1,27 @@
-# LaComanda By GGT 
-# ingresa a este sitio en desarrollo <a href="https://trittog.github.io/TP_Lab4_2c_2019/">Aqui</a>
+# LaComandaGGT
 
-```
-#Login:
-```
-<p>El login cuenta con coneccion a la api, la cual retorna un token valido dependiendo que tipo de usuario es el que ingresa con un captcha verificador.</p>
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
 
-<img src="laComanda-login.png" alt="Smiley face" height="300" width="400">
+## Development server
 
-```
-#Registro:
-```
-<p>El registro es muy sencillo, se conecta a la api guardando un nuevo usuario, al poder acceder cualquiera al registro, este guardara automaticamente al usuario ingresado como "cliente", si se quiere agregar otro tipo de usuario, debera hacerlo el administrador o "socio" una vez ingresado desde la pantalla principal</p>
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-<img src="laComanda-registro.png" alt="Smiley face" height="300" width="400">
+## Code scaffolding
 
-```
-#Pantalla Principal -Seccion Mesas-
-```
-<p>Esta es la pantalla principal, en la misma aparece el nombre de usuario que se acaba de logear. Tambien tiene 3 secciones: Pedidos, Mesas y usuarios (no descarto quitar o agregar secciones en un futuro) la seccion mesas muetra las mesas con su respectivo codigo y estado, los cuales pueden ser modificados mediante un boton. solo el administrador o "socio" podra crear una mesa nueva, pero el boton esta disponible para todos, (debo correjir eso)</p>
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-<img src="laComanda-ppal.png" alt="Smiley face" height="300" width="400">
+## Build
 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-```
-#Pantalla Principal -Seccion Pedidos-
-```
-<p>En desarrollo... PROXIMAMENTE</p>
+## Running unit tests
 
-```
-#Pantalla Principal -Seccion Usuarios-
-```
-<p>esta muestra los usuarios creados, (solo debe ser vista por los admins o "socios") ademas permite cargar un usuario nuevo que puede ser: "socio", "cocinero", "mozo", etc, (solo los socios)</p>
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-<img src="laComanda-usuarios.png" alt="Smiley face" height="300" width="400">
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

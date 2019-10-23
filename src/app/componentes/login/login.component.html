@@ -1,0 +1,30 @@
+<div id="padre">
+    <br>
+    <br>
+    <div id="titulito">
+        <h2>Inicia Sesion para Poder disfrutar de este magnifico sitio</h2>
+    </div>
+
+    <div id="formulario">
+        <label>Usuario: <br>
+            <input type="text" class="form-control" name="input" [(ngModel)]="nombreUsuario">
+        </label>
+        <br>
+        <label>Contraseña: <br>
+            <input type="password" class="form-control" name="input" [(ngModel)]="passUsuario">
+        </label>
+        <br>
+        
+        <re-captcha (resolved)="resolved($event)" siteKey="6LcnOb4UAAAAAKuG3gpN6KCnEiQ4uQnKSgqbXmB-
+        "></re-captcha>
+        <br>
+        <!--ACORDATE DE DISABLED TRUE"""""""""""""""""""""""""""!!!!!!!!!!  disabled=true  -->
+        <button (click)="entrar()" id="boton" class="btn btn-success" disabled=true >Login In</button>
+        <br>
+        <br>
+
+        <p>No tienes cuenta? <span (click)="registro()" id="spanRegistro">Registrate!</span></p>
+
+    </div>
+
+</div>
