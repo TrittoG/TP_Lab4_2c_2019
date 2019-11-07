@@ -9,5 +9,9 @@ http://restaurantelacomanda.tk/
 
 # Los codigos QR:
 
+PARA ENTRAR EN LA WEB:
+<img src="./qr_entrada.png" border="1" alt="Este es el ejemplo de un texto alternativo">
+
+
 PARA VER MESAS DISPONIBLES:
-<img src="./EstasParaVerMesas.png" border="1" alt="Este es el ejemplo de un texto alternativo" width="400" height="300">
+<img src="./EstasParaVerMesas.png" border="1" alt="Este es el ejemplo de un texto alternativo">
