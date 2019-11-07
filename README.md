@@ -12,16 +12,10 @@ http://restaurantelacomanda.tk/
 PARA ENTRAR EN LA WEB:
 <img src="./qr_entrada.png" border="1" alt="Este es el ejemplo de un texto alternativo">
 
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 PARA VER MESAS DISPONIBLES:
 <img src="./EstasParaVerMesas.png" border="1" alt="Este es el ejemplo de un texto alternativo">
