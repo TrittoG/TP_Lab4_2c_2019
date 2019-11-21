@@ -23,7 +23,7 @@ PARA VER MESAS DISPONIBLES:
 ```
 Aca se puede ingresar a la pagina con un usuario propio, en caso de ser un Cliente normal, tiene la posibilidad de registrarse, en caso de ser un tipo de socio (mozo,cocinero,admin, etc) el registro lo puede hacer UNICAMENTE un administrador.
 ```
-<img src="./fotos-README/Comanda-login.png" border="1">
+<img src="./fotos%20README/Comanda-login.png" border="1">
 
 
 ## Pagina Principal
