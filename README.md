@@ -62,7 +62,7 @@ Aqui se pueden ver todas las mesas existentes con su estado y codigo, el adminis
 ```
 Aqui el ADMINISTRADOR puede ver el menu y modificarle el precio, agregar un nuevo plato o eliminar algun item.
 ```
-<img src="./fotos%20README/Comanda-socios-menu.png" border="1">
+<img src="./fotos%20README/Comanda-socios-carta.png" border="1">
 
 ### Facturacion
 
