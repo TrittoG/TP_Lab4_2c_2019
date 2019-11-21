@@ -12,7 +12,6 @@ https://trittog.github.io/TP_Lab4_2c_2019/
 PARA ENTRAR EN LA WEB:
 <img src="./qr_entrada.png" border="1">
 
-<br>
 
 PARA VER MESAS DISPONIBLES:
 <img src="./EstasParaVerMesas.png" border="1">
@@ -23,7 +22,7 @@ PARA VER MESAS DISPONIBLES:
 ```
 Aca se puede ingresar a la pagina con un usuario propio, en caso de ser un Cliente normal, tiene la posibilidad de registrarse, en caso de ser un tipo de socio (mozo,cocinero,admin, etc) el registro lo puede hacer UNICAMENTE un administrador.
 ```
-<img src="./fotos%20README/Comanda-login.png" border="1">
+<img src="./fotos%20README/Comanda-login2.png" border="1">
 
 
 ## Pagina Principal
