@@ -1,6 +1,6 @@
 # LaComandaGGT
 
-##con dominio propio :)
+## con dominio propio :)
 
 http://restaurantelacomanda.tk/
 
@@ -88,3 +88,35 @@ Desde aqui un usuario que realizo un pedido, tomara su codigo y le retornara el 
 ```
 <img src="./EstasParaVerMesas.png" border="1">
 
+### Ver la carta
+
+```
+Aqui se puede ver la carta completa.
+```
+<img src="./EstasParaVerMesas.png" border="1">
+
+### Quienes Somos?
+
+```
+Apartado donde se da informacion del lugar.
+```
+<img src="./EstasParaVerMesas.png" border="1">
+
+### Mesas Disponibles
+
+```
+Aqui se debe escanear el codigo QR que esta en la puerta del local
+```
+<img src="./EstasParaVerMesas.png" border="1">
+```
+Una vez escaneado, te mostrara las mesas disponnibles para sentarse
+```
+<img src="./EstasParaVerMesas.png" border="1">
+
+
+### Mis Pedidos
+
+```
+Muestra los pedidos realizados por el usuario, los guarda en localstorage
+```
+<img src="./EstasParaVerMesas.png" border="1">
