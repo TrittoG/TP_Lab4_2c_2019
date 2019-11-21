@@ -4,7 +4,7 @@
 
 http://restaurantelacomanda.tk/
 
-https://trittog.github.io/TP_Lab4_2c_2019/
+----> https://trittog.github.io/TP_Lab4_2c_2019/ <----
 
 
 ## Los codigos QR:
