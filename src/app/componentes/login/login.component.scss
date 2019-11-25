@@ -1,0 +1,84 @@
+#formulario
+{
+    background: rgb(169, 170, 170);
+	border:1px solid #ddd;
+	position: absolute;
+	top: 50%; 
+	left: 50%; 
+	
+	margin-top: -10%; 
+	margin-left: -25%;
+    height: 500px;
+
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+
+
+#padre
+{
+    background-color: gray;
+    padding-bottom: 42%;
+    
+}
+
+#titulito
+{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media only screen and (max-width: 1400px) {
+    #formulario
+    {
+        background-color: rgb(92, 97, 97);
+        margin-top: -10%; 
+    }
+    #padre
+    {
+        padding-bottom: 60%;
+    }
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+    #formulario
+    {
+        background-color: rgb(126, 122, 122);
+        margin-left: -30%;
+        margin-top: -20%; 
+
+    }
+    #padre
+    {
+        padding-bottom: 80%;
+    }
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    #formulario
+    {
+        background-color: rgb(105, 102, 97);
+    }
+    #padre
+    {
+        padding-bottom: 100%;
+    }
+  }
+
+  
+  @media only screen and (max-width: 600px) {
+    #formulario
+    {
+        background-color: rgb(95, 102, 95);
+        margin-left: -47%;
+
+    }
+    #padre
+    {
+        padding-bottom: 180%;
+    }
+  }
