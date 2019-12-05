@@ -49,6 +49,9 @@ import { HacerEncuestaComponent } from './componentes/hacer-encuesta/hacer-encue
 import { VerEncuestaComponent } from './componentes/ver-encuesta/ver-encuesta.component';
 import { FechaPipe } from './pipes/fecha.pipe';
 import { FacturaMesaComponent } from './componentes/factura-mesa/factura-mesa.component';
+import { NombrePipe } from './pipes/nombre.pipe';
+import { ColorpedidoDirective } from './directivas/colorpedido.directive';
+import { ColormesaDirective } from './directivas/colormesa.directive';
 
 @NgModule({
   declarations: [
@@ -80,7 +83,10 @@ import { FacturaMesaComponent } from './componentes/factura-mesa/factura-mesa.co
     HacerEncuestaComponent,
     VerEncuestaComponent,
     FechaPipe,
-    FacturaMesaComponent
+    FacturaMesaComponent,
+    NombrePipe,
+    ColorpedidoDirective,
+    ColormesaDirective
   ],
   imports: [
     BrowserModule,
