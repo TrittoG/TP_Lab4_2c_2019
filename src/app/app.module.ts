@@ -40,6 +40,15 @@ import { PrevioMesasQRComponent } from './componentes/previo-mesas-qr/previo-mes
 import { PesosPipe } from './pipes/pesos.pipe';
 import { ColorDirective } from './directivas/color.directive';
 import { FotosComponent } from './componentes/fotos/fotos.component';
+import { CambiarFotoComponent } from './componentes/cambiar-foto/cambiar-foto.component';
+import { LogsComponent } from './componentes/logs/logs.component';
+import { GraficoLogsComponent } from './componentes/grafico-logs/grafico-logs.component';
+
+import { ChartsModule } from 'ng2-charts';
+import { HacerEncuestaComponent } from './componentes/hacer-encuesta/hacer-encuesta.component';
+import { VerEncuestaComponent } from './componentes/ver-encuesta/ver-encuesta.component';
+import { FechaPipe } from './pipes/fecha.pipe';
+import { FacturaMesaComponent } from './componentes/factura-mesa/factura-mesa.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +73,14 @@ import { FotosComponent } from './componentes/fotos/fotos.component';
     PrevioMesasQRComponent,
     PesosPipe,
     ColorDirective,
-    FotosComponent
+    FotosComponent,
+    CambiarFotoComponent,
+    LogsComponent,
+    GraficoLogsComponent,
+    HacerEncuestaComponent,
+    VerEncuestaComponent,
+    FechaPipe,
+    FacturaMesaComponent
   ],
   imports: [
     BrowserModule,
@@ -77,6 +93,7 @@ import { FotosComponent } from './componentes/fotos/fotos.component';
     BrowserAnimationsModule,
     PickListModule,
     NgQrScannerModule,
+    ChartsModule
 
   ],
   providers: [CookieService],

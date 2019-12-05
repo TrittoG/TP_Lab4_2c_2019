@@ -15,8 +15,8 @@ export class MesasDispComponent implements OnInit {
 
   ngOnInit() {
     this.mesas = new Array();
-
-    this.logServ.traerMesas().subscribe(res=>
+    let token = localStorage.getItem("token");
+    this.logServ.traerMesas(token).subscribe(res=>
       {
         //console.log(res);
         

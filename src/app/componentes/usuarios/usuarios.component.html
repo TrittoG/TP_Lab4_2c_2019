@@ -17,7 +17,10 @@
                   <td>{{usuario.id}}</td>
                   <td>{{usuario.nombre}}</td>
                   <td>{{usuario.tipo}}</td>
-                  <td><button (click)="modificarusuario(usuario.id)">Modificar</button></td>
+                  <td><button (click)="mozo(usuario.id, 'mozo')">Ascender a Mozo</button></td>
+                  <td><button (click)="bartender(usuario.id, 'bartender')">Ascender a Bartender</button></td>
+                  <td><button (click)="cocinero(usuario.id, 'cocinero')">Ascender a Cocinero</button></td>
+                  <td><button (click)="repostero(usuario.id, 'repostero')">Ascender a Repostero</button></td>
                 </tr>
                
             </tbody>

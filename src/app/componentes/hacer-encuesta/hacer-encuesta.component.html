@@ -1,0 +1,34 @@
+<br>
+<h3>Realize una encuesta del servicio de La Comanda</h3>
+
+
+<div id="div">
+    <p>Codigo De la mesa: (si aun no esta en ninguna mesa dejelo en blanco)</p>
+    <input type="text" name="" id="" [(ngModel)]="codigoMesa">
+    <br>
+    <br>
+    <p>Puntuacion de Mesa:</p>
+    <input type="range" min="0" max="10" step="1" class="form-control-range" [(ngModel)]="puntuacionMesa">
+    <br>
+
+    <p>Puntuacion de Resto:</p>
+    <input type="range" min="0" max="10" step="1" class="form-control-range" [(ngModel)]="puntuacionRestaurante">
+    <br>
+
+    <p>Puntuacion de Mozo:</p>
+    <input type="range" min="0" max="10" step="1" class="form-control-range" [(ngModel)]="puntuacionMozo">
+    <br>
+
+    <p>Puntuacion de Cocinero:</p>
+    <input type="range" min="0" max="10" step="1" class="form-control-range" [(ngModel)]="puntuacionCocinero">
+    <br>
+
+    <p>Comentario:</p>
+    <input type="text" name="" id="" [(ngModel)]="comentario">
+    <br>
+
+
+    <br>
+    <button (click)="enviar()" class="btn btn-success">Enviar Encuesta!</button>
+    <button (click)="volver()" class="btn btn-danger">Cancelar</button>
+</div>

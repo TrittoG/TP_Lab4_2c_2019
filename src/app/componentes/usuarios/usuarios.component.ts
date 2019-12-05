@@ -8,6 +8,7 @@ import { LogeoService } from 'src/app/servicios/logeo.service';
 })
 export class UsuariosComponent implements OnInit {
 
+
   public usuarios = [];
 
 
@@ -30,9 +31,48 @@ export class UsuariosComponent implements OnInit {
       })  
   }
 
-  modificarusuario(id)
+  mozo(id, tipo)
   {
+    let token = localStorage.getItem("token");
     
+    this.miServ.modificarUsuario(token,tipo,id).subscribe(res=>
+      {
+        console.log(res);
+        this.ngOnInit();
+      })
+  }
+
+  cocinero(id, tipo)
+  {
+    let token = localStorage.getItem("token");
+    
+    this.miServ.modificarUsuario(token,tipo,id).subscribe(res=>
+      {
+        console.log(res);
+        this.ngOnInit();
+      })
+  }
+
+  bartender(id, tipo)
+  {
+    let token = localStorage.getItem("token");
+    
+    this.miServ.modificarUsuario(token,tipo,id).subscribe(res=>
+      {
+        console.log(res);
+        this.ngOnInit();
+      })
+  }
+
+  repostero(id, tipo)
+  {
+    let token = localStorage.getItem("token");
+    
+    this.miServ.modificarUsuario(token,tipo,id).subscribe(res=>
+      {
+        console.log(res);
+        this.ngOnInit();
+      })
   }
 
 }

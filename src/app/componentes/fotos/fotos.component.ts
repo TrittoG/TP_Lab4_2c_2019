@@ -14,7 +14,7 @@ export class FotosComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.foto = "./assets/noRegistrado.png"
+    this.foto = localStorage.getItem('foto');
   }
 
 

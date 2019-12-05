@@ -95,7 +95,7 @@ export class PedidoNuevoComponent implements OnInit {
 
       pedidos.forEach(pedido => {
         let codigoPedido = this.makeid(5);
-        this.logServ.agregarPedido(codigoPedido,this.idMesa,"cocina",pedido.nombre,pedido.precio,token)
+        this.logServ.agregarPedido(codigoPedido,this.idMesa,pedido.tipo,pedido.nombre,pedido.precio,token)
         .subscribe(res=>{
           this.respuesta = res;
           console.log(this.respuesta);
@@ -107,13 +107,12 @@ export class PedidoNuevoComponent implements OnInit {
 
           pedidosAGuardar.push(pedidoParaGuardarLocal);
           localStorage.setItem("pedidos",JSON.stringify(pedidosAGuardar));
-    
+
         },
         err=>{
           console.log(err);
-          alert(err.error.respuesta)
-        })
-  
+          alert(err.error.respuesta);
+        });
       });
   
     }

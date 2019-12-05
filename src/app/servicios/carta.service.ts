@@ -11,7 +11,8 @@ export class CartaService {
       "nombre": "Pizza comun",
       "descripcion": "Queso tomate",
       "precio": "460",
-      "foto": "./assets/comida.jpg"
+      "foto": "./assets/comida.jpg",
+      "tipo":"cocina"
       
     },
     {
@@ -19,61 +20,44 @@ export class CartaService {
       "nombre": "Pizza especial",
       "descripcion": "Tomate y jamon",
       "precio": "490",
-      "foto": "./assets/comida.jpg"
-      
+      "foto": "./assets/comida.jpg",
+      "tipo":"cocina"
     },
     {
       "id": 3,
-      "nombre": "Lomo",
-      "descripcion": "Lomo al verdeo con salsa de champiñones",
+      "nombre": "Cerveza",
+      "descripcion": "Clasica artesanal",
       "precio": "650",
-      "foto": "./assets/comida.jpg"
+      "foto": "./assets/comida.jpg",
+      "tipo":"bar"
       
     },
     {
       "id": 4,
-      "nombre": "Milanesa a caballo",
-      "descripcion": "Milanesa con huevo frito mas papas",
+      "nombre": "Vino",
+      "descripcion": "Tinto de la casa",
       "precio": "500",
-      "foto": "./assets/comida.jpg"
+      "foto": "./assets/comida.jpg",
+      "tipo":"bar"
       
     },
     {
       "id": 5,
-      "nombre": "Hamburguesa Comun",
-      "descripcion": "hamburguesa con queso y papas",
+      "nombre": "Flan",
+      "descripcion": "Flan con DDL",
       "precio": "300",
-      "foto": "./assets/comida.jpg"
+      "foto": "./assets/comida.jpg",
+      "tipo":"postre"
     },
     {
       "id": 6,
-      "nombre": "Hamburguesa doble",
-      "descripcion": "doble hamburguesa con queso y bacon",
+      "nombre": "Tiramisu",
+      "descripcion": "de la casa",
       "precio": "460",
-      "foto": "./assets/comida.jpg"
+      "foto": "./assets/comida.jpg",
+      "tipo":"postre"
     },
-    {
-      "id": 7,
-      "nombre": "Hamburguesa LA COMANDA",
-      "descripcion": "doble hamburguesa con queso, bacon, salsa ahumada bbq, tomate lechuga y hongos",
-      "precio": "1000",
-      "foto": "./assets/comida.jpg"
-    },
-    {
-      "id": 8,
-      "nombre": "Empanadas",
-      "descripcion": "carne",
-      "precio": "80",
-      "foto": "./assets/comida.jpg"
-    },
-    {
-      "id": 9,
-      "nombre": "Empanadas",
-      "descripcion": "Jamon y queso",
-      "precio": "80",
-      "foto": "./assets/comida.jpg"
-      
-    },
+   
     
   ]
 

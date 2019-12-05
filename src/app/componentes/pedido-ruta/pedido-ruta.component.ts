@@ -39,6 +39,7 @@ export class PedidoRutaComponent implements OnInit {
       {
         this.respuesta = res;
         console.log(this.respuesta);
+        
       },
       err=>
       {

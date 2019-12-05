@@ -19,6 +19,10 @@ import { LeerMasComponent } from './componentes/leer-mas/leer-mas.component';
 import { FacturaComponent } from './componentes/factura/factura.component';
 import { PrevioMesasQRComponent } from './componentes/previo-mesas-qr/previo-mesas-qr.component';
 import { FotosComponent } from './componentes/fotos/fotos.component';
+import { CambiarFotoComponent } from './componentes/cambiar-foto/cambiar-foto.component';
+import { LogsComponent } from './componentes/logs/logs.component';
+import { HacerEncuestaComponent } from './componentes/hacer-encuesta/hacer-encuesta.component';
+import { VerEncuestaComponent } from './componentes/ver-encuesta/ver-encuesta.component';
 
 
 const routes: Routes = [
@@ -37,6 +41,8 @@ const routes: Routes = [
          { path: 'misPedidos', component: MisPedidosComponent },
          { path: 'leerMas', component: LeerMasComponent },
          { path: 'fotos', component: FotosComponent },
+         { path: 'cambiarFoto', component: CambiarFotoComponent},
+         { path: 'encuesta', component: HacerEncuestaComponent},
 
 
          { path: 'sociosqweasd123124', component: SociosComponent, children:
@@ -46,6 +52,8 @@ const routes: Routes = [
               {path: 'mesas' , component: MesasComponent},
               {path: 'menu' , component: CartaSociosComponent},
               {path: 'factura' , component: FacturaComponent},
+              {path: 'logs' , component: LogsComponent},
+              {path: 'encuestas' , component: VerEncuestaComponent},
 
             ]
           },

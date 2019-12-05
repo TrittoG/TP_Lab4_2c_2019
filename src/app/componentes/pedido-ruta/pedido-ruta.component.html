@@ -29,4 +29,8 @@
     <div id="datos">
         <p *ngIf="this.respuesta != null">{{this.respuesta.respuesta}}</p>
     </div>
+
+    <div *ngIf="this.respuesta" id="encuesta">
+        <app-hacer-encuesta *ngIf="this.respuesta.respuesta == 'estado: finalizado tiempo: 0'"></app-hacer-encuesta>
+    </div>
 </div>

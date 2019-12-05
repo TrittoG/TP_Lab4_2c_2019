@@ -40,8 +40,12 @@ export class LoginComponent implements OnInit {
           console.log(this.respuesta.usuario.tipo);
           localStorage.setItem("nombreingresado", this.respuesta.usuario.nombre);
           localStorage.setItem("tipo", this.respuesta.usuario.tipo);
-
-          this.router.navigate(['home/ppal'])
+          localStorage.setItem("idUsuario", this.respuesta.usuario.id);
+          localStorage.setItem("foto", this.respuesta.usuario.urlFoto);
+          console.log(this.respuesta.usuario);
+         
+            this.router.navigate(['home/ppal'])
+          
         }
       });
   }
@@ -83,6 +87,11 @@ export class LoginComponent implements OnInit {
       
       case 'bartender':
         this.nombreUsuario = "bartender1";
+        this.passUsuario = "aassdd";
+        break;
+      
+      case 'repostero':
+        this.nombreUsuario = "usuario";
         this.passUsuario = "aassdd";
         break;
 

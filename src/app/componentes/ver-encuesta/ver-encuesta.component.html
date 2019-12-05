@@ -1,0 +1,29 @@
+<p>ver encuestas!</p>
+
+
+
+<table class="table table-dark" id="tabla" >
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Codigo MEsa</th>
+        <th scope="col">Cocinero</th>
+        <th scope="col">Mesa</th>
+        <th scope="col">Mozo</th>
+        <th scope="col">Resto</th>
+        <th scope="col">Comentario</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let encuesta of encuestas">
+        <td>{{encuesta.id}}</td>
+        <td>{{encuesta.codigoMesa}}</td>
+        <td>{{encuesta.puntuacionCocinero}}</td>
+        <td>{{encuesta.puntuacionMesa}}</td>
+        <td>{{encuesta.puntuacionMozo}}</td>
+        <td>{{encuesta.puntuacionRestaurante}}</td>
+        <td>{{encuesta.comentario}}</td>
+        </tr>
+       
+    </tbody>
+  </table>

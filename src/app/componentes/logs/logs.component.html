@@ -1,0 +1,75 @@
+
+<div class="divs">
+    <p class="pes">Log de Login</p>
+    <br>
+    <table id="tabla" class="table table-sm table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Cuenta</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Tipo</th>
+           
+    
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let log of logsLogin">
+              <td>{{log.Account}}</td>
+              <td>{{log.Fecha.date | fecha}}</td>
+              <td>{{log.Tipo}}</td>
+            </tr>
+           
+        </tbody>
+      </table>
+   
+</div>
+
+<div class="divs">
+    <p class="pes">Logs de Operaciones:</p>
+    <br>
+    <table id="tabla" class="table table-sm table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Cuenta</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Metodo</th>
+            <th scope="col">Tipo</th>
+           
+    
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let log of operaciones">
+              <td>{{log.Account}}</td>
+              <td>{{log.Fecha.date | fecha}}</td>
+              <td>{{log.Metodo}}</td>
+              <td>{{log.Tipo}}</td>
+            </tr>
+           
+        </tbody>
+      </table>
+
+
+</div>
+
+<div class="divs">
+    <p class="pes">Grafico de Barras:</p>
+    <app-grafico-logs></app-grafico-logs>
+</div>
+
+<div class="divs">
+    <p class="pes">log De un Usuario:</p>
+    <input type="text" [(ngModel)]="idRecibido">
+    <button (click)="logXId()">Buscar</button>
+    <div *ngIf="logDePersona">
+      <p>CUENTA-FECHA------METODO--------TIPO</p>
+      <p *ngFor="let log of logDePersona">
+       {{log.Account}}
+       {{log.Fecha.date | fecha}}
+       {{log.Metodo}}
+       {{log.Tipo}}
+      </p>
+    </div>
+</div>
+
+

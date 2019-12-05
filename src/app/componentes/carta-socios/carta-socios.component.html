@@ -17,7 +17,7 @@
           <td>{{carta.id}}</td>
           <td>{{carta.nombre}}</td>
           <td>{{carta.descripcion}}</td>
-          <td>{{carta.precio}}</td>
+          <td>{{carta.precio | pesos}}</td>
           <td><img src="{{carta.foto}}" alt="" id="fotito"></td>
           <td><button (click)="modificarCarta(carta.id)" class="btnModificar">Modificar</button></td>
           <td><button (click)="borrarCarta(carta.id)" >Borrar</button></td>

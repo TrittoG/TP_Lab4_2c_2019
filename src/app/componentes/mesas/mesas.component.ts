@@ -29,7 +29,8 @@ export class MesasComponent implements OnInit {
 
   ngOnInit() 
   {
-    this.miServ.traerMesas().subscribe(res=>
+    let token = localStorage.getItem("token");
+    this.miServ.traerMesas(token).subscribe(res=>
       {
         this.mesas = res;
 
@@ -71,7 +72,7 @@ export class MesasComponent implements OnInit {
           alert(this.respuesta);
 
           //con esto intento que se actualize en tiempo real la mesa nueva agregada
-          this.miServ.traerMesas().subscribe(res=>
+          this.miServ.traerMesas(token).subscribe(res=>
             {
               this.mesas = res;
         

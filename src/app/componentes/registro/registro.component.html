@@ -1,19 +1,21 @@
-<h1 id="titulo">Registro</h1>
+<div id="ppal">
+    <h1 id="titulo">Registro</h1>
 
-<div>
-    <label>Usuario: <br>
-        <input type="text" name="input" [(ngModel)]="nombreUsuario">
-    </label>
-    <br>
-    <label>Contraseña: <br>
-        <input type="password" name="input" [(ngModel)]="passUsuario">
-    </label>
-    <br>
-    <label>Repetir contraseña: <br>
-        <input type="password" name="input" [(ngModel)]="passUsuario2">
-    </label>
-    <br>
-    <button (click)="entrar()" id="boton" >Registrate</button>
-    <button (click)="cancelar()" id="boton" >Cancelar</button>
+    <div id="form">
+        <label class="labels">Usuario: <br>
+            <input type="text" name="input" [(ngModel)]="nombreUsuario">
+        </label>
+        <br>
+        <label class="labels">Contraseña: <br>
+            <input type="password" name="input" [(ngModel)]="passUsuario">
+        </label>
+        <br>
+        <label class="labels">Repetir contraseña: <br>
+            <input type="password" name="input" [(ngModel)]="passUsuario2">
+        </label>
+        <br>
+        <button (click)="entrar()" id="boton" class="btn btn-primary">Registrate</button>
+        <button (click)="cancelar()" id="boton" class="btn btn-danger">Cancelar</button>
 
+    </div>
 </div>
