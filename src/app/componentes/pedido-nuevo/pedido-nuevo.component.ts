@@ -47,6 +47,12 @@ export class PedidoNuevoComponent implements OnInit {
     if(div.style.display != "block")
     {
       div.style.display = "block";
+      this.list1.forEach(element => {
+        let chk = document.getElementById(element.id) as HTMLInputElement;
+        if(chk.checked)
+        this.list2.push(element);
+      });
+        
     }
     else
     {
@@ -79,7 +85,7 @@ export class PedidoNuevoComponent implements OnInit {
 
     if(pedidos.length == 0)
     {
-      alert("debe seleccionar algo para pedir");
+      alert("No elihio ningun producto");
     }
     else
     {
@@ -90,24 +96,18 @@ export class PedidoNuevoComponent implements OnInit {
 
       let pedidosAGuardar:Array<pedido>
       let pedidoParaGuardarLocal:pedido;
-    
+      let codigosPedidos = '';
       pedidosAGuardar = new Array<pedido>();
 
       pedidos.forEach(pedido => {
         let codigoPedido = this.makeid(5);
-        this.logServ.agregarPedido(codigoPedido,this.idMesa,pedido.tipo,pedido.nombre,pedido.precio,token)
+        this.logServ.agregarPedido(codigoPedido,this.idMesa,pedido.tipo,pedido.nombre,pedido.precio,token,localStorage.getItem('idUsuario'))
         .subscribe(res=>{
           this.respuesta = res;
-          console.log(this.respuesta);
-          alert(this.respuesta)
-          this.mensaje = "su codigo de pedido es: " + codigoPedido;
-          
-          pedidoParaGuardarLocal = {"codigoPedido":codigoPedido,"codigoMesa":this.idMesa,
-          "nombre":pedido.nombre,"precio":pedido.precio};
-
-          pedidosAGuardar.push(pedidoParaGuardarLocal);
-          localStorage.setItem("pedidos",JSON.stringify(pedidosAGuardar));
-
+          codigosPedidos = codigosPedidos + ', ' + codigoPedido;
+          this.mensaje = "sus codigos de pedidos es: " + codigosPedidos;
+          let div = document.getElementById("divFinal");
+          div.style.display = "none";
         },
         err=>{
           console.log(err);
