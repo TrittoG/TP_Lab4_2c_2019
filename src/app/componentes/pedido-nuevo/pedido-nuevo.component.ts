@@ -101,7 +101,7 @@ export class PedidoNuevoComponent implements OnInit {
 
       pedidos.forEach(pedido => {
         let codigoPedido = this.makeid(5);
-        this.logServ.agregarPedido(codigoPedido,this.idMesa,pedido.tipo,pedido.nombre,pedido.precio,token,localStorage.getItem('idUsuario'))
+        this.logServ.agregarPedido(codigoPedido,this.idMesa,pedido.tipo,pedido.nombre,pedido.precio,token)
         .subscribe(res=>{
           this.respuesta = res;
           codigosPedidos = codigosPedidos + ', ' + codigoPedido;
