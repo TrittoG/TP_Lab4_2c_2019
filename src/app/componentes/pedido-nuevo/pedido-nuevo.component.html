@@ -1,15 +1,9 @@
 <h3>Realiza un Pedido!</h3>
 
 
-
-<p-pickList [source]="list1" [target]="list2" sourceHeader="Cosas a Pedir">
-    <ng-template let-car pTemplate="item">
-        <div class="ui-helper-clearfix">
-            <img src="{{car.foto}}" style="display:inline-block;margin:2px 0 2px 2px" width="48">
-            <div style="font-size:14px;float:left">{{car.id}} - {{car.nombre}} - {{car.descripcion}} - {{car.precio}}</div>
-        </div>
-    </ng-template>
-</p-pickList>
+<div id='menu'*ngFor="let item of list1">
+    <p>Nombre: {{item.nombre}}, descripcion: {{item.descripcion}}, Precio: {{item.precio}} <input type="checkbox" name="" id="{{item.id}}" value='item'></p>
+</div>
 
 <button (click)="mostrar()" class="btn btn-primary">Listo!</button>
 
