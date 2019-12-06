@@ -1,10 +1,22 @@
-import { Directive } from '@angular/core';
+
+import { Directive, ElementRef, Input } from '@angular/core';
 
 @Directive({
-  selector: '[appColormesa]'
+  selector: '[appColorMesa]'
 })
-export class ColormesaDirective {
+export class ColorDirective {
 
-  constructor() { }
+  @Input() appColorMesa:string;
+
+  constructor(public element:ElementRef) { }
+
+  ngOnInit()
+  {
+    console.log(this.element.nativeElement);
+    if(this.appColor != "cerrada")
+    {
+      this.element.nativeElement.style.backgroundColor = "red";
+    }
+  }
 
 }
