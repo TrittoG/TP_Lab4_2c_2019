@@ -20,7 +20,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let pedido of pedidos" >
+      <tr *ngFor="let pedido of pedidos" appColorPedido ={{pedido.estado}} >
           <td *ngIf="(tipo == 'socio') || (tipo == 'cocinero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'mozo' && (pedido.estado == 'listo para servir' || pedido.estado == 'entregado')) || (tipo == 'bartender' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'repostero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion'))">{{pedido.id}}</td>
           <td *ngIf="(tipo == 'socio') || (tipo == 'cocinero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'mozo' && (pedido.estado == 'listo para servir' || pedido.estado == 'entregado')) || (tipo == 'bartender' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'repostero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion'))">{{pedido.estado}}</td>
           <td *ngIf="(tipo == 'socio') || (tipo == 'cocinero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'mozo' && (pedido.estado == 'listo para servir' || pedido.estado == 'entregado')) || (tipo == 'bartender' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'repostero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion'))">{{pedido.codigoPedido}}</td>
