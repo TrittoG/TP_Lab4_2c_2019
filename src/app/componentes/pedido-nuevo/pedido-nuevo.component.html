@@ -1,21 +1,16 @@
 <h3>Realiza un Pedido!</h3>
 
-
 <div id='menu'*ngFor="let item of list1">
     <p>Nombre: {{item.nombre}}, descripcion: {{item.descripcion}}, Precio: {{item.precio}} <input type="checkbox" name="" id="{{item.id}}" value='item'></p>
 </div>
 
-<button (click)="mostrar()" class="btn btn-primary">Listo!</button>
+<button (click)="mostrar()" class="btn btn-primary">Pedir</button>
 
 <p>{{this.mensaje}}</p>
-<div id="divFinal" style="display: none;">
-    <p>Por favor seleccione el codigo de su mesa en la cual quiere realizar el pedido</p>
-    <br>
-    <p>(para testear asd123 o aaaa)</p>
+<div id="divFinal" style="display: none;" align="center">
     <label for="">Codigo de la Mesa:</label>
     <input type="text" name="codigoMesa" id="codigoMesa" [(ngModel)]="idMesa">
     <br>
-    <br>
-    <br>
-    <button (click)="terminar()" class="btn btn-success">Realizar Pedido!</button>
+    <button (click)="terminar()" class="btn btn-primary">Realizar Pedido!</button>
+    <button (click)="mostrar()" class="btn btn-danger">Cancelar</button>
 </div>
