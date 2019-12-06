@@ -4,7 +4,7 @@ import { Directive, ElementRef, Input } from '@angular/core';
 @Directive({
   selector: '[appColorMesa]'
 })
-export class ColorDirective {
+export class ColorMesaDirective {
 
   @Input() appColorMesa:string;
 
