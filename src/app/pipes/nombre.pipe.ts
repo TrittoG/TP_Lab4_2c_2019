@@ -10,6 +10,10 @@ export class NombrePipe implements PipeTransform {
     {
       return "Sin Nombre";
     }
+    else
+    {
+      return value;
+    }
   }
 
 }

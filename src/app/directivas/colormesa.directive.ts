@@ -2,20 +2,24 @@
 import { Directive, ElementRef, Input } from '@angular/core';
 
 @Directive({
-  selector: '[appColorMesa]'
+  selector: '[appPuntuacion]'
 })
 export class ColorMesaDirective {
 
-  @Input() appColorMesa:string;
+  @Input() appPuntuacion:any;
 
   constructor(public element:ElementRef) { }
 
   ngOnInit()
   {
-    console.log(this.element.nativeElement);
-    if(this.appColor != "cerrada")
+    console.log(this.appPuntuacion);
+    if(this.appPuntuacion < 4)
     {
       this.element.nativeElement.style.backgroundColor = "red";
+    }
+    else if(this.appPuntuacion > 8)
+    {
+      this.element.nativeElement.style.backgroundColor = "green";
     }
   }
 

@@ -50,8 +50,8 @@ import { VerEncuestaComponent } from './componentes/ver-encuesta/ver-encuesta.co
 import { FechaPipe } from './pipes/fecha.pipe';
 import { FacturaMesaComponent } from './componentes/factura-mesa/factura-mesa.component';
 import { NombrePipe } from './pipes/nombre.pipe';
-import { ColorpedidoDirective } from './directivas/colorpedido.directive';
-import { ColormesaDirective } from './directivas/colormesa.directive';
+import { ColorPedidoDirective } from './directivas/colorpedido.directive';
+import { ColorMesaDirective } from './directivas/colormesa.directive';
 
 @NgModule({
   declarations: [
@@ -85,8 +85,8 @@ import { ColormesaDirective } from './directivas/colormesa.directive';
     FechaPipe,
     FacturaMesaComponent,
     NombrePipe,
-    ColorpedidoDirective,
-    ColormesaDirective
+    ColorPedidoDirective,
+    ColorMesaDirective
   ],
   imports: [
     BrowserModule,

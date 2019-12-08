@@ -48,6 +48,11 @@ export class HomeComponent implements OnInit {
   salir()
   {
     this.router.navigate(["login"]);
-    localStorage.clear();
+    //localStorage.clear();
+    localStorage.removeItem("nombreingresado");
+    localStorage.removeItem("foto");
+    localStorage.removeItem("idUsuario");
+    localStorage.removeItem("tipo");
+    localStorage.removeItem("token");
   }
 }

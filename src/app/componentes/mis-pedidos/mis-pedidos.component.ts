@@ -14,8 +14,7 @@ export class MisPedidosComponent implements OnInit {
 
   ngOnInit() {
     this.losDatos = localStorage.getItem("pedidos");
-    this.arrayPedidos = JSON.parse(this.losDatos);
-    console.log(JSON.parse(this.losDatos)); 
+  
   }
 
 }

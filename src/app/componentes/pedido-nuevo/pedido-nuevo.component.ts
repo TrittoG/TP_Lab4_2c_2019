@@ -30,6 +30,7 @@ export class PedidoNuevoComponent implements OnInit {
   public idMesa:string;
   public respuesta:any;
 
+  public abrirRuta:boolean = false;
   public mensaje:any;
 
   ngOnInit() {
@@ -94,10 +95,7 @@ export class PedidoNuevoComponent implements OnInit {
       //lo guardo en localstorage para poder revisarlo mas adelante
       //entre todo lo que se selecciono debo ir realizando pedidos
 
-      let pedidosAGuardar:Array<pedido>
-      let pedidoParaGuardarLocal:pedido;
       let codigosPedidos = '';
-      pedidosAGuardar = new Array<pedido>();
 
       pedidos.forEach(pedido => {
         let codigoPedido = this.makeid(5);
@@ -105,9 +103,11 @@ export class PedidoNuevoComponent implements OnInit {
         .subscribe(res=>{
           this.respuesta = res;
           codigosPedidos = codigosPedidos + ', ' + codigoPedido;
+          localStorage.setItem("pedidos",codigosPedidos);
           this.mensaje = "sus codigos de pedidos es: " + codigosPedidos;
           let div = document.getElementById("divFinal");
           div.style.display = "none";
+          this.abrirRuta = true;
         },
         err=>{
           console.log(err);
