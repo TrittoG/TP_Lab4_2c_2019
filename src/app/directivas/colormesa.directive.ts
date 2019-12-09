@@ -12,7 +12,7 @@ export class ColorMesaDirective {
 
   ngOnInit()
   {
-    console.log(this.appPuntuacion);
+    //console.log(this.appPuntuacion);
     if(this.appPuntuacion < 4)
     {
       this.element.nativeElement.style.backgroundColor = "red";

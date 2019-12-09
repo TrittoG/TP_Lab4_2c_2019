@@ -29,13 +29,16 @@ export class PedidosComponent implements OnInit {
   ngOnInit() {
     this.tipo = localStorage.getItem("tipo");
       let token = localStorage.getItem("token");
+    
       this.logServ.traerPedidos(token).subscribe(res=>
         {
+         
           //console.log(res);
           this.pedidos = res.respuesta;
           this.quePidio = res.respuesta[0].quePidio;
           //this.quePidio = JSON.stringify(this.quePidio);
           //console.log(this.quePidio);
+          console.log("hasta aca llega")
         },
         err=>
         {
@@ -143,7 +146,7 @@ export class PedidosComponent implements OnInit {
     //console.log(pedido);
     this.logServ.modificarPedidoSinCambios(pedido.codigoPedido,token,estadoFinal,tiempo,pedido.tipo)
     .subscribe(res=>{
-      alert(res.respuesta);
+      //alert(res.respuesta);
       this.ngOnInit();
     },
     err=>

@@ -12,8 +12,9 @@
         <th scope="col">Tiempo Estimado</th>
         <th scope="col">Mesa</th>
         <th scope="col">Pedido</th>
+        <th scope="col">Cantidad</th>
         <th scope="col">Tipo</th>
-        <th scope="col">Precio</th>
+        <th scope="col" *ngIf="(tipo == 'socio') || (tipo == 'mozo')">Precio</th>
         <th scope="col">Modificar</th>
 
 
@@ -27,8 +28,9 @@
           <td *ngIf="(tipo == 'socio') || (tipo == 'cocinero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'mozo' && (pedido.estado == 'listo para servir' || pedido.estado == 'entregado')) || (tipo == 'bartender' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'repostero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion'))">{{pedido.tiempo}}</td>
           <td *ngIf="(tipo == 'socio') || (tipo == 'cocinero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'mozo' && (pedido.estado == 'listo para servir' || pedido.estado == 'entregado')) || (tipo == 'bartender' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'repostero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion'))">{{pedido.idMesa}}</td>
           <td *ngIf="(tipo == 'socio') || (tipo == 'cocinero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'mozo' && (pedido.estado == 'listo para servir' || pedido.estado == 'entregado')) || (tipo == 'bartender' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'repostero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion'))">{{pedido.quePidio}}</td>
+          <td *ngIf="(tipo == 'socio') || (tipo == 'cocinero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'mozo' && (pedido.estado == 'listo para servir' || pedido.estado == 'entregado')) || (tipo == 'bartender' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'repostero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion'))">{{pedido.cantidad}}</td>
           <td *ngIf="(tipo == 'socio') || (tipo == 'cocinero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'mozo' && (pedido.estado == 'listo para servir' || pedido.estado == 'entregado')) || (tipo == 'bartender' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'repostero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion'))">{{pedido.tipo}}</td>
-          <td *ngIf="(tipo == 'socio') || (tipo == 'cocinero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'mozo' && (pedido.estado == 'listo para servir' || pedido.estado == 'entregado')) || (tipo == 'bartender' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'repostero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion'))">{{pedido.precio}}</td>
+          <td *ngIf="(tipo == 'socio') || (tipo == 'mozo' && (pedido.estado == 'listo para servir' || pedido.estado == 'entregado'))">{{pedido.precio | pesos}}</td>
           <td *ngIf="(tipo == 'socio') || (tipo == 'cocinero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'mozo' && (pedido.estado == 'listo para servir' || pedido.estado == 'entregado')) || (tipo == 'bartender' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion')) || (tipo == 'repostero' && (pedido.estado == 'pendiente' || pedido.estado == 'en preparacion'))"><button (click)="abrirDiv(pedido)" class="btnModificar btn btn-warning">Modificar</button></td>
         </tr>
        

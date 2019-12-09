@@ -93,7 +93,7 @@ export class LogeoService {
     
   }
 
-  agregarPedido(codigo:string,idMesa:string,tipoPedido:string,quePidio:string,precio:string,token:string):Observable<any>
+  agregarPedido(codigo:string,idMesa:string,tipoPedido:string,quePidio:string,precio:string,token:string,cantidad:any):Observable<any>
   {
     const myheader = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
     //myheader.set('Content-Type', 'application/x-www-form-urlencoded');
@@ -103,6 +103,7 @@ export class LogeoService {
     body = body.set('tipoPedido', tipoPedido);
     body = body.set('quePidio', quePidio);
     body = body.set('precio', precio);
+    body = body.set('cantidad', cantidad);
 
     body = body.set('token', token);
 

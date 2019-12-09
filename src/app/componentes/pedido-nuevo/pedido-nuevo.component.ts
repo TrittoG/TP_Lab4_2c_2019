@@ -30,6 +30,8 @@ export class PedidoNuevoComponent implements OnInit {
   public idMesa:string;
   public respuesta:any;
 
+  public cantidad = 1;
+
   public abrirRuta:boolean = false;
   public mensaje:any;
 
@@ -99,7 +101,7 @@ export class PedidoNuevoComponent implements OnInit {
 
       pedidos.forEach(pedido => {
         let codigoPedido = this.makeid(5);
-        this.logServ.agregarPedido(codigoPedido,this.idMesa,pedido.tipo,pedido.nombre,pedido.precio,token)
+        this.logServ.agregarPedido(codigoPedido,this.idMesa,pedido.tipo,pedido.nombre,pedido.precio,token,this.cantidad)
         .subscribe(res=>{
           this.respuesta = res;
           codigosPedidos = codigosPedidos + ', ' + codigoPedido;

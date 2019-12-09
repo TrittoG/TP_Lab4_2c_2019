@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
         }
         else
         {
-          alert("bienvenido!");
+          //alert("bienvenido!");
           localStorage.setItem("token",this.respuesta.token);
           console.log(this.respuesta.usuario.tipo);
           localStorage.setItem("nombreingresado", this.respuesta.usuario.nombre);

@@ -11,7 +11,7 @@ export class ColorDirective {
 
   ngOnInit()
   {
-    console.log(this.element.nativeElement);
+    //console.log(this.element.nativeElement);
     if(this.appColor == "cerrada")
     {
       this.element.nativeElement.style.backgroundColor = "green";
